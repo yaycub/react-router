@@ -10,7 +10,8 @@ describe('List Component', () => {
       id: 1,
       status: 'dedd',
       origin: 'place',
-      location: 'place'
+      location: 'place',
+      species: 'person1',
     },
     {
       name: 'Person 2',
@@ -18,9 +19,11 @@ describe('List Component', () => {
       id: 2,
       status: 'dedd',
       origin: 'place',
-      location: 'place'
+      location: 'place',
+      species: 'person1'
     }
-    ]} />);
+    ]} onIncrement={(() => 'hi')}
+    onDecrement={(() => 'bye')} page={1} />);
 
     expect(wrapper).toMatchSnapshot();
   });

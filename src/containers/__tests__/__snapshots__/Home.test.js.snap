@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component can render Home 1`] = `
+<List
+  characterArr={Array []}
+  onDecrement={[Function]}
+  onIncrement={[Function]}
+  page={1}
+/>
+`;
