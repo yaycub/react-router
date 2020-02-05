@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Component should render a List 1`] = `
+<ul>
+  <li
+    key="1"
+  >
+    <ListItem
+      id={1}
+      image="Person1.jpeg"
+      location="place"
+      name="Person 1"
+      origin="place"
+      status="dedd"
+    />
+  </li>
+  <li
+    key="2"
+  >
+    <ListItem
+      id={2}
+      image="Person2.jpeg"
+      location="place"
+      name="Person 2"
+      origin="place"
+      status="dedd"
+    />
+  </li>
+</ul>
+`;
