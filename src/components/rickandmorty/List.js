@@ -29,11 +29,7 @@ List.propTypes = {
   characterArr: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
-    status: PropTypes.string.isRequired,
-    species: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    origin: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired
+    image: PropTypes.string.isRequired
   })).isRequired,
   onIncrement: PropTypes.func.isRequired,
   onDecrement: PropTypes.func.isRequired,

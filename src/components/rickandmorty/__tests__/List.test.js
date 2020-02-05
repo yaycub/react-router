@@ -7,20 +7,12 @@ describe('List Component', () => {
     const wrapper = shallow(<List characterArr={[{
       name: 'Person 1',
       image: 'Person1.jpeg',
-      id: 1,
-      status: 'dedd',
-      origin: 'place',
-      location: 'place',
-      species: 'person1',
+      id: 1
     },
     {
       name: 'Person 2',
       image: 'Person2.jpeg',
-      id: 2,
-      status: 'dedd',
-      origin: 'place',
-      location: 'place',
-      species: 'person1'
+      id: 2
     }
     ]} onIncrement={(() => 'hi')}
     onDecrement={(() => 'bye')} page={1} />);

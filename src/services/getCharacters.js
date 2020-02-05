@@ -6,12 +6,21 @@ export const getCharacters = (page) => {
         return {
           id: character.id,
           name: character.name,
-          status: character.status,
-          species: character.species,
-          origin: character.origin.name,
-          location: character.location.name,
           image: character.image
         };
       });
     });
+};
+
+export const getOneCharacter = (id) => {
+  return fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    .then(res => res.json())
+    .then(res => ({
+      name: res.name,
+      status: res.status,
+      species: res.species,
+      origin: res.origin.name,
+      location: res.location.name,
+      image: res.image
+    }));
 };

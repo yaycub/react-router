@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component should render a Header 1`] = `
+<header>
+  <h1>
+    React and Morty
+  </h1>
+  <nav>
+    <li>
+      <Link
+        to="/"
+      >
+        Home
+      </Link>
+    </li>
+  </nav>
+</header>
+`;

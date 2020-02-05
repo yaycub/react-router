@@ -25,11 +25,7 @@ exports[`List Component should render a List 1`] = `
       <ListItem
         id={1}
         image="Person1.jpeg"
-        location="place"
         name="Person 1"
-        origin="place"
-        species="person1"
-        status="dedd"
       />
     </li>
     <li
@@ -38,11 +34,7 @@ exports[`List Component should render a List 1`] = `
       <ListItem
         id={2}
         image="Person2.jpeg"
-        location="place"
         name="Person 2"
-        origin="place"
-        species="person1"
-        status="dedd"
       />
     </li>
   </ul>
