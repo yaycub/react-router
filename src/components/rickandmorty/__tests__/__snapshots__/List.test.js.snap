@@ -22,20 +22,28 @@ exports[`List Component should render a List 1`] = `
     <li
       key="1"
     >
-      <ListItem
-        id={1}
-        image="Person1.jpeg"
-        name="Person 1"
-      />
+      <Link
+        to="/characters/1"
+      >
+        <ListItem
+          id={1}
+          image="Person1.jpeg"
+          name="Person 1"
+        />
+      </Link>
     </li>
     <li
       key="2"
     >
-      <ListItem
-        id={2}
-        image="Person2.jpeg"
-        name="Person 2"
-      />
+      <Link
+        to="/characters/2"
+      >
+        <ListItem
+          id={2}
+          image="Person2.jpeg"
+          name="Person 2"
+        />
+      </Link>
     </li>
   </ul>
 </Fragment>

@@ -15,12 +15,15 @@ export const getCharacters = (page) => {
 export const getOneCharacter = (id) => {
   return fetch(`https://rickandmortyapi.com/api/character/${id}`)
     .then(res => res.json())
-    .then(res => ({
-      name: res.name,
-      status: res.status,
-      species: res.species,
-      origin: res.origin.name,
-      location: res.location.name,
-      image: res.image
-    }));
+    .then(res => {
+      console.log(res);
+      return {
+        name: res.name,
+        status: res.status,
+        species: res.species,
+        origin: res.origin.name,
+        location: res.location.name,
+        image: res.image
+      };
+    });
 };

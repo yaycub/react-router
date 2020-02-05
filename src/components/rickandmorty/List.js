@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ListItem from './ListItem';
+import { Link } from 'react-router-dom';
 
 const List = ({ characterArr, onIncrement, onDecrement, page }) => {
   const characterEls = characterArr.map(character => {
     return (
       <li key={character.id}>
-        <ListItem {...character} /> 
+        <Link to={`/characters/${character.id}`}>
+          <ListItem {...character} /> 
+        </Link>
       </li>
     );
   });
