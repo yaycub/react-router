@@ -16,7 +16,7 @@ const Detail = ({ match }) => {
         <figcaption>{name}</figcaption>
       </figure>
       <ul>
-        <li>Statue: {status}</li>
+        <li>Status: {status}</li>
         <li>Species: {species}</li>
         <li>Origin: {origin}</li>
         <li>Location: {location}</li>
