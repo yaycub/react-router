@@ -1,24 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Detail Component should render Detail 1`] = `
-<article>
-  <figure>
-    <img />
-    <figcaption />
-  </figure>
-  <ul>
-    <li>
-      Statue: 
-    </li>
-    <li>
-      Species: 
-    </li>
-    <li>
-      Origin: 
-    </li>
-    <li>
-      Location: 
-    </li>
-  </ul>
-</article>
+<img
+  alt="loading"
+  src="https://upload.wikimedia.org/wikipedia/commons/6/66/Loadingsome.gif"
+/>
 `;
