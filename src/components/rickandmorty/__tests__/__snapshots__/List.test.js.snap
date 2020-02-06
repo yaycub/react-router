@@ -2,49 +2,51 @@
 
 exports[`List Component should render a List 1`] = `
 <Fragment>
-  <div>
-    <button
-      onClick={[Function]}
-    >
-      ←
-    </button>
-    <span>
-      1
-      /25
-    </span>
-    <button
-      onClick={[Function]}
-    >
-      →
-    </button>
-  </div>
-  <ul>
-    <li
-      key="1"
-    >
-      <Link
-        to="/characters/1"
+  <section>
+    <div>
+      <button
+        onClick={[Function]}
       >
-        <ListItem
-          id={1}
-          image="Person1.jpeg"
-          name="Person 1"
-        />
-      </Link>
-    </li>
-    <li
-      key="2"
-    >
-      <Link
-        to="/characters/2"
+        ←
+      </button>
+      <span>
+        1
+        /25
+      </span>
+      <button
+        onClick={[Function]}
       >
-        <ListItem
-          id={2}
-          image="Person2.jpeg"
-          name="Person 2"
-        />
-      </Link>
-    </li>
-  </ul>
+        →
+      </button>
+    </div>
+    <ul>
+      <li
+        key="1"
+      >
+        <Link
+          to="/characters/1"
+        >
+          <ListItem
+            id={1}
+            image="Person1.jpeg"
+            name="Person 1"
+          />
+        </Link>
+      </li>
+      <li
+        key="2"
+      >
+        <Link
+          to="/characters/2"
+        >
+          <ListItem
+            id={2}
+            image="Person2.jpeg"
+            name="Person 2"
+          />
+        </Link>
+      </li>
+    </ul>
+  </section>
 </Fragment>
 `;

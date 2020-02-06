@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ListItem from './ListItem';
+import styles from './styles/List.css';
 import { Link } from 'react-router-dom';
 
 const List = ({ characterArr, onIncrement, onDecrement, page }) => {
@@ -16,14 +17,16 @@ const List = ({ characterArr, onIncrement, onDecrement, page }) => {
 
   return (
     <>
-      <div>
-        <button onClick={onDecrement}>&#8592;</button>
-        <span>{page}/25</span>
-        <button onClick={onIncrement}>&#8594;</button>
-      </div>
-      <ul>
-        {characterEls}
-      </ul>
+      <section className={styles.List}>
+        <div>
+          <button onClick={onDecrement}>&#8592;</button>
+          <span>{page}/25</span>
+          <button onClick={onIncrement}>&#8594;</button>
+        </div>
+        <ul>
+          {characterEls}
+        </ul>
+      </section>
     </>
   );
 };
