@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem component can render a ListItem 1`] = `
+<Fragment>
+  <h2>
+    a name
+  </h2>
+  <img
+    alt="a name"
+    src="image.jpeg"
+  />
+</Fragment>
+`;
