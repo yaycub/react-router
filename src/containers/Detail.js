@@ -4,8 +4,10 @@ import styles from './styles/Detail.css';
 import { useOneCharacter } from '../hooks/useOneCharacter';
 
 const Detail = ({ match }) => {
-  const oneCharacter = useOneCharacter(match.params.id);
+  const { oneCharacter, loading } = useOneCharacter(match.params.id);
   const { name, status, species, origin, location, image } = oneCharacter;
+
+  if(loading) return <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Loadingsome.gif" alt="loading" />;
   
   return (
     <article className={styles.Detail}>
