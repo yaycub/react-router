@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './styles/Detail.css';
 import { useOneCharacter } from '../hooks/useOneCharacter';
 
 const Detail = ({ match }) => {
@@ -7,7 +8,7 @@ const Detail = ({ match }) => {
   const { name, status, species, origin, location, image } = oneCharacter;
   
   return (
-    <article>
+    <article className={styles.Detail}>
       <figure>
         <img src={image} alt={name} />
         <figcaption>{name}</figcaption>
